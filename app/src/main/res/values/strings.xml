@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">ETEC-Solicitação-ferias</string>
-    
-  
-    <string name="solicitacao">Solicitação</string>
-<string name="abonoPecuniario">Abono Pecuniário</string>
+    <string name="app_name">Etec-SolicitacaoFerias</string>
+
+
+    <string name="solicitação">Solicitação</string>
+    <string name="abonoPecuniario">Abono Pecuniário</string>
     <string name="sim">Sim</string>
-<string name="nao">Não</string>
+    <string name="nao">Não</string>
     
     <string name="dataInicio">Data Inicio</string>
     <string name="selecione"> Selecione</string>
     <string name="qtdedeDias">Qtde de Dias</string>
     <string name="registrar">Registrar</string>
-    <string name="datafim">Data fim </string>
-
+    <string name="datafim">Data Fim </string>
+    <string name="quantidadededias"> Quantidade de Dias </string>
     
 </resources>

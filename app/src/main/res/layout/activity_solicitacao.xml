@@ -16,16 +16,19 @@
             android:layout_height="match_parent"
 
             android:background="@color/azul"
+
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/solicitacao"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/branco"
-                android:textStyle="bold" />
+                style="@style/titulo"
+                android:layout_width="342dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Solicitaçao" />
+
+
+
+
         </LinearLayout>
 
             <TableLayout
@@ -33,8 +36,9 @@
                 android:layout_height="wrap_content"
                 android:stretchColumns="0,1">
 
-            <TextView
-                android:text="@string/abonoPecuniario"/>
+
+                <TableRow>
+                <TextView android:text="@string/abonoPecuniario" />
 
             <RadioGroup
                 android:id="@+id/groupAbonoPecuniario"
@@ -56,52 +60,62 @@
                     android:checked="true"
                     android:text="@string/nao" />
             </RadioGroup>
+</TableRow>
+
 
        <TableRow>
 
            <TextView
                android:id="@+id/dataInicio"
-               android:layout_gravity="center"
-               android:text="@string/dataInicio" />
+               android:layout_gravity="center_vertical"
+               android:text="Data Inicio:" />
 
-           
 
                 <Button
                     android:id="@+id/btnDataInicio"
-                    android:onClick="onSelecionarData"
-                    android:text="@string/selecione" />
+                    android:text="Selecione" />
 
             </TableRow>
 
+    <TableRow>
+                <TextView
+                    android:id="@+id/qtdeDias"
+                    android:layout_gravity="clip_horizontal"
+                    android:text="Qtde de dias:"/>
+
+                <Spinner
+                    android:id="@+id/spnQtdeDias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@id/spnQtdeDias" />
+
+</TableRow>
 
 
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/txtDataFim"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="clip_horizontal"
+                        android:text="Data Fim:" />
+
+                    <EditText
+                        android:id="@+id/editDataFim"
+                        android:inputType=""
+                        tools:text="@tools:sample/date/ddmmyy" />
+
+                </TableRow>
 
 
 
                 <Button
-                    android:id="@+id/btnSalvarViagem"
-                    android:onClick="onRegistrar"
-                    android:text="@string/registrar" />
-
-
-
+                    android:id="@+id/btnRegistrar"
+                    android:text="Registrar" />
 
 
         </TableLayout>
+
     </LinearLayout>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</LinearLayout>
+</ScrollView>
