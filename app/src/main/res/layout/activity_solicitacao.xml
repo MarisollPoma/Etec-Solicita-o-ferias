@@ -40,26 +40,26 @@
                 <TableRow>
                 <TextView android:text="@string/abonoPecuniario" />
 
-            <RadioGroup
-                android:id="@+id/groupAbonoPecuniario"
-                android:orientation="horizontal">
+                    <RadioGroup
+                        android:id="@+id/groupAbonoPecuniario"
+                        android:orientation="horizontal">
 
 
-                <RadioButton
-                    android:id="@+id/radioSim"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="@string/sim" />
+                        <RadioButton
+                            android:id="@+id/radioSim"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/sim" />
 
 
-                <RadioButton
-                    android:id="@+id/radioNao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="@string/nao" />
-            </RadioGroup>
+                        <RadioButton
+                            android:id="@+id/radioNao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/nao" />
+                    </RadioGroup>
 </TableRow>
 
 
@@ -92,25 +92,25 @@
 </TableRow>
 
 
-                <TableRow>
+                <TableRow android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/txtDataFim"
+                        android:id="@+id/datafim"
                         android:layout_height="match_parent"
                         android:layout_gravity="clip_horizontal"
                         android:text="Data Fim:" />
 
-                    <EditText
-                        android:id="@+id/editDataFim"
-                        android:inputType=""
-                        tools:text="@tools:sample/date/ddmmyy" />
+                    <Button
+                        android:id="@+id/btnDataFim"
+                        android:onClick="OnRadioClick"
+                        android:text="__/__/__" />
 
                 </TableRow>
 
 
-
                 <Button
                     android:id="@+id/btnRegistrar"
+                    android:onClick="OnRegistrar"
                     android:text="Registrar" />
 
 
